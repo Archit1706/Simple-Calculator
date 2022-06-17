@@ -1,7 +1,7 @@
 # Simple-Calculator
 Simple Calculator with Light and Dark theme toggle button.
 
-Technologies Used
+Technologies Used: 
 HTML
 CSS
 Javascript
