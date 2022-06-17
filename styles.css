@@ -1,0 +1,97 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+*, *::before, ::after {
+    box-sizing: border-box;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    /* font-family: 'Fascinate', cursive; */
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to bottom right, #40DFEF, #FFBED8);
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    /* margin-bottom: -10px; */
+    color: rgba(0, 0, 0, 0.75);
+    margin: auto;
+}
+
+.theme-change {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* height: 50px; */
+}
+
+.theme-change > button {
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.theme-change > button:hover {
+    background-color: rgba(255, 255, 255, .5);
+    color: black;
+}
+
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 5rem);
+    grid-template-rows: minmax(120px, auto) repeat(5, 5rem);
+}
+
+.calculator-grid > button {
+    cursor: pointer;
+    font-size: 1.8rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+}
+
+.calculator-grid > button:hover {
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .previous-operand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+}
+
+.output .current-operand {
+    color: white;
+    font-size: 2.5rem;
+}
